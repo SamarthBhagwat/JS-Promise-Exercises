@@ -19,4 +19,4 @@ vault: Personal data is restricted by law. This particular type of data is often
 mark: Every time someone reads a user profile, we must mark it. The mark service will create this mark. Use it like this: mark(id).then(function() { ... }). Do not call the mark service if another service is in error. Also, do not wait for the mark service to complete processing. If the mark service has an error, don't do anything specific. Just return your promise with the information.
 Every service responds in 100ms, except vault. (Security for personal data is heavier, so it's slower. It will respond in 150ms.) Your code must respond in 200ms. If multiple services are in error, return the first error you found.
 
-/*
+*/
